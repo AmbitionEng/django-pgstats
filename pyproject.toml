@@ -47,8 +47,8 @@ classifiers = [
 ]
 license = "BSD-3-Clause"
 readme = "README.md"
-homepage = "https://github.com/Opus10/django-pgstats"
-repository = "https://github.com/Opus10/django-pgstats"
+homepage = "https://github.com/AmbitionEng/django-pgstats"
+repository = "https://github.com/AmbitionEng/django-pgstats"
 documentation = "https://django-pgstats.readthedocs.io"
 
 [tool.poetry.dependencies]
