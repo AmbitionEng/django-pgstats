@@ -29,7 +29,7 @@ exclude = [
 ]
 version = "0.0.0"
 description = "Commands and models for tracking internal postgres stats."
-authors = ["Opus 10 Engineering"]
+authors = ["Ambition Engineering"]
 classifiers = [
   "Intended Audience :: Developers",
   "Operating System :: OS Independent",
@@ -47,8 +47,8 @@ classifiers = [
 ]
 license = "BSD-3-Clause"
 readme = "README.md"
-homepage = "https://github.com/Opus10/django-pgstats"
-repository = "https://github.com/Opus10/django-pgstats"
+homepage = "https://github.com/AmbitionEng/django-pgstats"
+repository = "https://github.com/AmbitionEng/django-pgstats"
 documentation = "https://django-pgstats.readthedocs.io"
 
 [tool.poetry.dependencies]
