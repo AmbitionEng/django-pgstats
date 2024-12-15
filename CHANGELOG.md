@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.1 (2024-12-15)
+
+#### Changes
+
+  - Changed project ownership to `AmbitionEng` by [@wesleykendall](https://github.com/wesleykendall) in [#23](https://github.com/AmbitionEng/django-pgstats/pull/23).
+
 ## 1.5.0 (2024-11-01)
 
 #### Changes
