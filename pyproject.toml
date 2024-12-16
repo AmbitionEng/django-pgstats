@@ -27,7 +27,7 @@ packages = [
 exclude = [
   "*/tests/"
 ]
-version = "1.5.0"
+version = "1.5.1"
 description = "Commands and models for tracking internal postgres stats."
 authors = ["Wes Kendall", "Tómas Árni Jónasson"]
 classifiers = [
@@ -47,8 +47,8 @@ classifiers = [
 ]
 license = "BSD-3-Clause"
 readme = "README.md"
-homepage = "https://github.com/Opus10/django-pgstats"
-repository = "https://github.com/Opus10/django-pgstats"
+homepage = "https://github.com/AmbitionEng/django-pgstats"
+repository = "https://github.com/AmbitionEng/django-pgstats"
 documentation = "https://django-pgstats.readthedocs.io"
 
 [tool.poetry.dependencies]
