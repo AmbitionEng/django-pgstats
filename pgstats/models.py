@@ -19,7 +19,7 @@ class JSONField(DjangoJSONField):
 def dict_fetchall(cursor):
     """Returns all rows from a cursor as a dict"""
     desc = cursor.description
-    return [dict(zip((col[0] for col in desc), row)) for row in cursor.fetchall()]
+    return [dict(zip((col[0] for col in desc), row, strict=False)) for row in cursor.fetchall()]
 
 
 class IndexStatsManager(models.Manager):
@@ -30,7 +30,7 @@ class IndexStatsManager(models.Manager):
         cursor = connection.cursor()
         cursor.execute("select * from pg_stat_all_indexes where schemaname='public'")
         rows = dict_fetchall(cursor)
-        return {f'{row["schemaname"]}.{row["relname"]}.{row["indexrelname"]}': row for row in rows}
+        return {f"{row['schemaname']}.{row['relname']}.{row['indexrelname']}": row for row in rows}
 
 
 class IndexStats(models.Model):
@@ -50,7 +50,7 @@ class TableStatsManager(models.Manager):
         cursor = connection.cursor()
         cursor.execute("select * from pg_stat_all_tables where schemaname='public'")
         rows = dict_fetchall(cursor)
-        return {f'{row["schemaname"]}.{row["relname"]}': row for row in rows}
+        return {f"{row['schemaname']}.{row['relname']}": row for row in rows}
 
 
 class TableStats(models.Model):
